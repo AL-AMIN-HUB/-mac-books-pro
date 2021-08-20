@@ -7,21 +7,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Book Pro</title>
 
-    <!-- Bootstrap Css StyleSheets -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- tailwind Css cdn -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <h1>Welcome to our website</h1>
+    <!-- header start -->
+    <header>
+        <!-- this website header part not available -->
+    </header>
+    <!-- header end -->
+
+    <main>
+        <section>
 
 
+            <div class="grid grid-cols-2 w-3/4 mx-auto my-32 gap-20">
+                <div>
+                    <img src="./images/mac.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-5xl font-semibold text-gray-800">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p class="mt-5 text-xl">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB ports Magic Mouse Magic keyboard - US English</p>
 
 
+                    <!-- memory part design hear -->
+                    <div>
+                        <h2 class="text-3xl mt-10 mb-3">Memory</h2>
+                        <button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">8GB unified memory</button><button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded">16GB unified memory</button>
+                    </div>
 
-    <!-- javascript link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+                    <!-- Storage part design hear -->
+                    <div>
+                        <h2 class="text-3xl mt-10 mb-3">Storage</h2>
+                        <button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">256GB SSD storage</button><button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded mr-2 mb-2">512GB SSD storage</button>
+                        <button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded">1TB SSD storage</button>
+                    </div>
+
+
+                    <!-- Delivery option design hear -->
+                    <div>
+                        <h2 class="text-3xl mt-10 mb-3">Choose your delivery option</h2>
+                        <button type="submit" class="bg-gray-50 border py-2 px-3 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">Friday, Aug 25 FREE Prime Delivery</button><button type="submit" class="bg-gray-50 border py-2 px-3 hover:bg-gray-600 hover:text-white text-xl rounded">Friday, Aug 21 Delivery charge $20</button>
+                    </div>
+
+                    <!-- Total price design hear -->
+                    <section>
+                        <div class="flex justify-between border-b-2  w-1/2 mt-12 py-3">
+                            <div>
+                                <h4 class="font-semibold text-xl ml-3">Best Price</h4>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-xl mr-10">$1299</h4>
+                            </div>
+                        </div>
+                        <div class="flex justify-between border-b-2  w-1/2 py-3">
+                            <div>
+                                <h4 class="font-semibold text-xl ml-3">Extra Memory Cost</h4>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-xl mr-10">$0</h4>
+                            </div>
+                        </div>
+                        <div class="flex justify-between border-b-2  w-1/2 py-3">
+                            <div>
+                                <h4 class="font-semibold text-xl ml-3">Extra Storage Cost</h4>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-xl mr-10">$0</h4>
+                            </div>
+                        </div>
+                        <div class="flex justify-between border-b-2 border-black  w-1/2 py-3">
+                            <div>
+                                <h4 class="font-semibold text-xl ml-3">Delivery charge</h4>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-xl mr-10">$0</h4>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-b-2  w-1/2 py-3">
+                            <div>
+                                <h4 class="font-semibold text-xl ml-3">Total Price</h4>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-xl mr-10">$1299</h4>
+                            </div>
+                        </div>
+
+
+                        <!-- pomo code design -->
+                        <div>
+                            <h3 class="text-xl font-semibold mt-10">Add Pomo Code</h3>
+                            <input type="text" class="py-2 px-10 rounded border">
+                            <button class="py-2 px-5 rounded bg-red-500  text-white">Apply</button>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <hr class="w-3/4 mx-auto border border-gray-300 mb-5">
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2 class="text-3xl text-center font-semibold mb-10">Total: $1299</h2>
+    </footer>
+
+
 
     <!-- Custom Js -->
     <script src="js/app.js"></script>
