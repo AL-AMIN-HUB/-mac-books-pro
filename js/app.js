@@ -3,57 +3,47 @@ function getMemoryCost(price) {
     const extra16GBMemoryCost = document.getElementById('extra-memory-cost');
     extra16GBMemoryCost.innerText = price;
     totalPriceUpdate();
-}
+};
 document.getElementById('memory8-btn').addEventListener('click', function() {
     getMemoryCost(0);
-
 });
 document.getElementById('memory16-btn').addEventListener('click', function() {
     getMemoryCost(180);
-
 });
 
 
-
 // update storage price
-
 function getStorageCost(price) {
     const extra256StorageCost = document.getElementById('extra-storage-cost');
     extra256StorageCost.innerText = price;
     totalPriceUpdate();
-}
+};
+
 document.getElementById('ssd-256gb').addEventListener('click', function() {
-
     getStorageCost(0);
-
 });
 document.getElementById('ssd-512gb').addEventListener('click', function() {
-
     getStorageCost(100);
-
 });
 document.getElementById('ssd-1TB').addEventListener('click', function() {
-
     getStorageCost(180);
-
 });
 
 
-// delivery charge
-
+// delivery charge price
 function updateDeliveryCost(cost) {
     const deliveryCost = document.getElementById('delivery-charge');
     deliveryCost.innerText = cost;
     totalPriceUpdate();
 };
-document.getElementById('delivery-free-btn').addEventListener('click', function() {
 
+document.getElementById('delivery-free-btn').addEventListener('click', function() {
     updateDeliveryCost(0);
 });
 document.getElementById('delivery-charge-btn').addEventListener('click', function() {
-
     updateDeliveryCost(20);
 });
+
 
 // total price handle
 function totalPriceUpdate() {
@@ -71,8 +61,8 @@ function totalPriceUpdate() {
     totalPomoPrice.innerText = bestPriceSum;
 };
 
-// pomo code handle hear
 
+// coupon code handle hear
 document.getElementById('pomo-btn').addEventListener('click', function() {
     const pomocode = document.getElementById('pomo-input');
     const totalPrice = document.getElementById('total-price');
@@ -85,10 +75,7 @@ document.getElementById('pomo-btn').addEventListener('click', function() {
         totalPomoPrice.innerText = totalPrice.innerText - (totalPrice.innerText * discount / 100);
         pomocode.value = '';
     }
-
     if (input.toLowerCase() != coupon.toLowerCase()) {
         pomocode.value = '';
     }
-
-
 });

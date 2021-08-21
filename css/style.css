@@ -8,14 +8,18 @@
 }
 
 
-/* section header font size */
+/*------------------------
+ section header text
+ ----------------------*/
 
 .h1-size {
     font-size: 2.5rem;
 }
 
 
-/* hover effect added */
+/*---------------------------
+ hover effect added 
+ -----------------------*/
 
 .hover-effect:hover {
     background-color: rgb(58, 57, 57);
