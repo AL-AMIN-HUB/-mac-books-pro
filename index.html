@@ -36,22 +36,23 @@
                     <!-- memory part design hear -->
                     <div>
                         <h2 class="text-3xl mt-10 mb-3">Memory</h2>
-                        <button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">8GB unified memory</button><button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded">16GB unified memory</button>
+                        <button type="submit" id="memory8-btn" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">8GB unified memory</button><button type="submit" id="memory16-btn" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded">16GB unified memory</button>
                     </div>
 
 
                     <!-- Storage part design hear -->
                     <div>
                         <h2 class="text-3xl mt-10 mb-3">Storage</h2>
-                        <button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">256GB SSD storage</button><button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded mr-2 mb-2">512GB SSD storage</button>
-                        <button type="submit" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded">1TB SSD storage</button>
+                        <button type="submit" id="ssd-256gb" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">256GB SSD storage</button><button type="submit" id="ssd-512gb" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded mr-2 mb-2">512GB SSD storage</button>
+                        <button type="submit" id="ssd-1TB" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded">1TB SSD storage</button>
                     </div>
 
 
                     <!-- Delivery option design hear -->
                     <div>
                         <h2 class="text-3xl mt-10 mb-3">Choose your delivery option</h2>
-                        <button type="submit" class="bg-gray-50 border py-2 px-3 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">Friday, Aug 25 FREE Prime Delivery</button><button type="submit" class="bg-gray-50 border py-2 px-3 hover:bg-gray-600 hover:text-white text-xl rounded">Friday, Aug 21 Delivery charge $20</button>
+                        <button type="submit" id="delivery-free-btn" class="bg-gray-50 border py-2 px-3 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">Friday, Aug 25 FREE Prime Delivery</button><button type="submit" id="delivery-charge-btn"
+                            class="bg-gray-50 border py-2 px-3 hover:bg-gray-600 hover:text-white text-xl rounded">Friday, Aug 21 Delivery charge $20</button>
                     </div>
 
                     <!-- Total price design hear -->
@@ -69,7 +70,7 @@
                                 <h4 class="font-semibold text-xl ml-3">Extra Memory Cost</h4>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-xl mr-10">$0</h4>
+                                <h4 class="font-semibold text-xl mr-10">$<span id="extra-memory-cost">0</span></h4>
                             </div>
                         </div>
                         <div class="flex justify-between border-b-2  w-1/2 py-3">
@@ -77,7 +78,7 @@
                                 <h4 class="font-semibold text-xl ml-3">Extra Storage Cost</h4>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-xl mr-10">$0</h4>
+                                <h4 class="font-semibold text-xl mr-10">$<span id="extra-storage-cost">0</span></h4>
                             </div>
                         </div>
                         <div class="flex justify-between border-b-2 border-black  w-1/2 py-3">
@@ -85,7 +86,7 @@
                                 <h4 class="font-semibold text-xl ml-3">Delivery charge</h4>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-xl mr-10">$0</h4>
+                                <h4 class="font-semibold text-xl mr-10">$<span id="delivery-charge">0</span></h4>
                             </div>
                         </div>
                         <div class="flex justify-between items-center border-b-2  w-1/2 py-3">
@@ -102,7 +103,7 @@
                         <div>
                             <h3 class="text-xl font-semibold mt-10">Add Pomo Code</h3>
                             <input type="text" class="py-2 px-10 rounded border">
-                            <button class="py-2 px-5 rounded bg-red-500  text-white">Apply</button>
+                            <button id="pomo-btn" class="py-2 px-5 rounded bg-red-500  text-white">Apply</button>
                         </div>
                     </section>
 
