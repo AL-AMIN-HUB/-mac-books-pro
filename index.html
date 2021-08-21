@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Book Pro</title>
 
-    <!-- tailwind Css cdn -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -21,102 +24,77 @@
     <!-- header end -->
 
     <main>
-        <section>
+        <section class="container-section">
 
 
-            <div class="grid grid-cols-2 w-3/4 mx-auto mt-32 mb-5 gap-20">
-                <div>
-                    <img src="./images/mac.png" alt="">
+            <div class="container d-flex justify-content-between">
+                <div class="col-lg-6">
+                    <img class="img-fluid block" src="./images/mac.png" alt="">
                 </div>
-                <div>
-                    <h1 class="text-5xl font-semibold text-gray-800">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
-                    <p class="mt-5 text-xl">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB ports Magic Mouse Magic keyboard - US English</p>
+                <div class="col-lg-5">
+                    <h1 class="h1-size">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p class="lead">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB ports Magic Mouse Magic keyboard - US English</p>
 
 
                     <!-- memory part design hear -->
-                    <div>
-                        <h2 class="text-3xl mt-10 mb-3">Memory</h2>
-                        <button type="submit" id="memory8-btn" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">8GB unified memory</button><button type="submit" id="memory16-btn" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded">16GB unified memory</button>
+                    <div class="mb-4">
+                        <h4 class="mt-4 mb-3">Memory</h4>
+                        <button type="submit" id="memory8-btn" class="border py-2 px-4 me-2 hover-effect rounded">8GB unified memory</button><button type="submit" id="memory16-btn" class="border py-2 px-4 me-2 hover-effect rounded">16GB unified memory</button>
                     </div>
 
 
                     <!-- Storage part design hear -->
-                    <div>
-                        <h2 class="text-3xl mt-10 mb-3">Storage</h2>
-                        <button type="submit" id="ssd-256gb" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">256GB SSD storage</button><button type="submit" id="ssd-512gb" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded mr-2 mb-2">512GB SSD storage</button>
-                        <button type="submit" id="ssd-1TB" class="bg-gray-50 border py-2 px-4 hover:bg-gray-600 hover:text-white text-xl rounded">1TB SSD storage</button>
+                    <div class="mb-4">
+                        <h4 class="mt-4 mb-3">Storage</h4>
+                        <button type="submit" id="ssd-256gb" class="border py-2 px-4 me-2 hover-effect rounded">256GB SSD storage</button><button type="submit" id="ssd-512gb" class="border py-2 px-4 me-2 mb-2 hover-effect rounded">512GB SSD storage</button>
+                        <button type="submit" id="ssd-1TB" class="border py-2 px-2 me-2 hover-effect rounded">1TB SSD storage</button>
                     </div>
 
-
                     <!-- Delivery option design hear -->
-                    <div>
-                        <h2 class="text-3xl mt-10 mb-3">Choose your delivery option</h2>
-                        <button type="submit" id="delivery-free-btn" class="bg-gray-50 border py-2 px-3 hover:bg-gray-600 hover:text-white mr-2 mb-2 text-xl rounded">Friday, Aug 25 FREE Prime Delivery</button><button type="submit" id="delivery-charge-btn"
-                            class="bg-gray-50 border py-2 px-3 hover:bg-gray-600 hover:text-white text-xl rounded">Friday, Aug 21 Delivery charge $20</button>
+                    <div class="mb-4">
+                        <h4 class="mt-4 mb-3">Choose your delivery option</h4>
+                        <button type="submit" id="delivery-free-btn" class="border py-2 px-1 me-2 hover-effect rounded">Friday, Aug 25 FREE Prime Delivery</button><button type="submit" id="delivery-charge-btn" class="border py-2 px-1 me-2 hover-effect rounded">Friday, Aug 21 Delivery charge $20</button>
                     </div>
 
                     <!-- Total price design hear -->
-                    <section>
-                        <div class="flex justify-between border-b-2  w-1/2 mt-12 py-3">
-                            <div>
-                                <h4 class="font-semibold text-xl ml-3">Best Price</h4>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-xl mr-10">$1299</h4>
-                            </div>
-                        </div>
-                        <div class="flex justify-between border-b-2  w-1/2 py-3">
-                            <div>
-                                <h4 class="font-semibold text-xl ml-3">Extra Memory Cost</h4>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-xl mr-10">$<span id="extra-memory-cost">0</span></h4>
-                            </div>
-                        </div>
-                        <div class="flex justify-between border-b-2  w-1/2 py-3">
-                            <div>
-                                <h4 class="font-semibold text-xl ml-3">Extra Storage Cost</h4>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-xl mr-10">$<span id="extra-storage-cost">0</span></h4>
-                            </div>
-                        </div>
-                        <div class="flex justify-between border-b-2 border-black  w-1/2 py-3">
-                            <div>
-                                <h4 class="font-semibold text-xl ml-3">Delivery charge</h4>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-xl mr-10">$<span id="delivery-charge">0</span></h4>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center border-b-2  w-1/2 py-3">
-                            <div>
-                                <h4 class="font-semibold text-xl ml-3">Total Price</h4>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-xl mr-10">$1299</h4>
-                            </div>
-                        </div>
+                    <section class="w-75 mt-5">
 
-
-                        <!-- pomo code design -->
-                        <div>
-                            <h3 class="text-xl font-semibold mt-10">Add Pomo Code</h3>
-                            <input type="text" class="py-2 px-10 rounded border">
-                            <button id="pomo-btn" class="py-2 px-5 rounded bg-red-500  text-white">Apply</button>
-                        </div>
+                        <table class="table">
+                            <tbody>
+                                <tr class="fs-6">
+                                    <th scope="row">Best Price</th>
+                                    <td class="fw-bold">$<span id="best-price">1299</span></td>
+                                </tr>
+                                <tr class="fs-6">
+                                    <th scope="row">Extra Memory Cost</th>
+                                    <td class="fw-bold">$<span id="extra-memory-cost">0</span></td>
+                                </tr>
+                                <tr class="fs-6">
+                                    <th scope="row">Extra Storage Cost</th>
+                                    <td class="fw-bold">$<span id="extra-storage-cost">0</span></td>
+                                </tr>
+                                <tr class="fs-6 border-dark">
+                                    <th scope="row">Delivery Charge</th>
+                                    <td class="fw-bold">$<span id="delivery-charge">0</span></td>
+                                </tr>
+                                <tr class="fs-6">
+                                    <th scope="row">Total Price</th>
+                                    <td class="fw-bold">$<span id="total-price">1299</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
 
                 </div>
             </div>
-            <hr class="w-3/4 mx-auto border border-gray-300 mb-5">
+            <hr class="w-75 border-2 d-block mx-auto">
 
         </section>
 
     </main>
 
     <footer>
-        <h2 class="text-3xl text-center font-semibold mb-10">Total: $1299</h2>
+        <h2 class="text-3xl text-center font-semibold mb-10">Total: $<span>1299</span></h2>
     </footer>
 
 
