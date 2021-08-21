@@ -55,7 +55,7 @@ document.getElementById('delivery-charge-btn').addEventListener('click', functio
     updateDeliveryCost(20);
 });
 
-// 
+// total price handle
 function totalPriceUpdate() {
     const bestPrice = document.getElementById('best-price').innerText;
     const extraMemoryPrice = document.getElementById('extra-memory-cost').innerText;
@@ -67,4 +67,28 @@ function totalPriceUpdate() {
     const totalPrice = document.getElementById('total-price');
 
     totalPrice.innerText = bestPriceSum;
-}
+    const totalPomoPrice = document.getElementById('total-with-pomo');
+    totalPomoPrice.innerText = bestPriceSum;
+};
+
+// pomo code handle hear
+
+document.getElementById('pomo-btn').addEventListener('click', function() {
+    const pomocode = document.getElementById('pomo-input');
+    const totalPrice = document.getElementById('total-price');
+    const totalPomoPrice = document.getElementById('total-with-pomo');
+    const discount = 20;
+    const coupon = 'stevekaku';
+    const input = pomocode.value;
+
+    if (input.toLowerCase() == coupon.toLowerCase()) {
+        totalPomoPrice.innerText = totalPrice.innerText - (totalPrice.innerText * discount / 100);
+        pomocode.value = '';
+    }
+
+    if (input.toLowerCase() != coupon.toLowerCase()) {
+        pomocode.value = '';
+    }
+
+
+});
